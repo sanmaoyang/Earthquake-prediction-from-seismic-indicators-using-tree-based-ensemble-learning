@@ -34,8 +34,6 @@
     <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning">View Demo</a>
-    ·
     <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning/issues">Report Bug</a>
     ·
     <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning/issues">Request Feature</a>
@@ -51,7 +49,7 @@
     <li>
       <a href="#about-the-repository">About The Repository</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#development-environment">Development Environment</a></li>
       </ul>
     </li>
     <li>
