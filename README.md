@@ -75,8 +75,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Repository 
 
-This repository contains the source code used to produce the results
-presented in:
+This paper has been published in Natural Hazards：
 
 |  | Info |
 |-:|:-----|
