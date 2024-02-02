@@ -83,7 +83,7 @@ This paper has been published in Natural Hazards：
 | Author| Yang Zhao & Denise Gorse |
 | Corresponding Author | Denise Gorse |
 | Link |https://link.springer.com/article/10.1007/s11069-023-06221-5|
-| Availability of code | https://figshare.com/articles/Earthquake_Prediction_using_SVR_and_HNN/6406814.|
+| Availability of data | https://figshare.com/articles/Earthquake_Prediction_using_SVR_and_HNN/6406814.|
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
