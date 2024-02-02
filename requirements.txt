@@ -1,0 +1,16 @@
+imbalanced-learn
+scikit-learn
+numpy==1.21.2
+pandas
+matplotlib
+xgboost
+rotation-forest
+catboost
+joblib
+lightgbm
+BorutaShap
+scipy
+seaborn
+statsmodels
+scikit-plot
+joblib
