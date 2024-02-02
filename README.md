@@ -89,7 +89,6 @@ presented in:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ###  Development Environment
 
 |  | Info |
@@ -100,9 +99,49 @@ presented in:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Abstract -->
+## Abstract
+Earthquake prediction is a challenging research area, but the use of a variety of machine learning models, together with a range of seismic indicators as inputs, has over the last decade led to encouraging progress, though the variety of seismic indicator features within any given study has been generally quite small. Recently, however, a multistage, hybrid learning model has used a total of 60 seismic indicators, applying this to data from three well-studied regions, aiming to predict earthquakes of magnitude 5.0 or above, up to 15 days before the event. In order to determine whether the encouraging results of this prior work were due to its learning model or to its expanded feature set we apply a range of tree-based ensemble classifiers to the same three datasets, showing that all these classifiers outperform the original, more complex model (with CatBoost as the best-performing), and hence that the value of this prior approach likely lay mostly in its range of presented features. We then use feature rankings from Boruta-Shap to discover the most valuable of these 60 features for each of the three regions, and challenge our optimized models to predict earthquakes of larger magnitudes, demonstrating their resilience to imbalanced data. Notably, we also address the prevalent issue of inappropriate test data selection and data leakage in earthquake prediction studies, demonstrating our models can continue to deliver effective predictions when the possibility of data leakage is strictly controlled.
 
-
+### Keywords: 
+Earthquake prediction, Seismic indicators, Ensemble learning, Feature selection
 <!-- GETTING STARTED -->
+
+
+## Cite
+### bib
+```
+﻿@Article{Zhao2024,
+author={Zhao, Yang
+and Gorse, Denise},
+title={Earthquake prediction from seismic indicators using tree-based ensemble learning},
+journal={Natural Hazards},
+year={2024},
+month={Jan},
+day={27},
+abstract={Earthquake prediction is a challenging research area, but the use of a variety of machine learning models, together with a range of seismic indicators as inputs, has over the last decade led to encouraging progress, though the variety of seismic indicator features within any given study has been generally quite small. Recently, however, a multistage, hybrid learning model has used a total of 60 seismic indicators, applying this to data from three well-studied regions, aiming to predict earthquakes of magnitude 5.0 or above, up to 15 days before the event. In order to determine whether the encouraging results of this prior work were due to its learning model or to its expanded feature set we apply a range of tree-based ensemble classifiers to the same three datasets, showing that all these classifiers outperform the original, more complex model (with CatBoost as the best-performing), and hence that the value of this prior approach likely lay mostly in its range of presented features. We then use feature rankings from Boruta-Shap to discover the most valuable of these 60 features for each of the three regions, and challenge our optimized models to predict earthquakes of larger magnitudes, demonstrating their resilience to imbalanced data. Notably, we also address the prevalent issue of inappropriate test data selection and data leakage in earthquake prediction studies, demonstrating our models can continue to deliver effective predictions when the possibility of data leakage is strictly controlled.},
+issn={1573-0840},
+doi={10.1007/s11069-023-06221-5},
+url={https://doi.org/10.1007/s11069-023-06221-5}
+}
+
+```
+### ris
+```
+TY  - JOUR
+AU  - Zhao, Yang
+AU  - Gorse, Denise
+PY  - 2024
+DA  - 2024/01/27
+TI  - Earthquake prediction from seismic indicators using tree-based ensemble learning
+JO  - Natural Hazards
+AB  - Earthquake prediction is a challenging research area, but the use of a variety of machine learning models, together with a range of seismic indicators as inputs, has over the last decade led to encouraging progress, though the variety of seismic indicator features within any given study has been generally quite small. Recently, however, a multistage, hybrid learning model has used a total of 60 seismic indicators, applying this to data from three well-studied regions, aiming to predict earthquakes of magnitude 5.0 or above, up to 15 days before the event. In order to determine whether the encouraging results of this prior work were due to its learning model or to its expanded feature set we apply a range of tree-based ensemble classifiers to the same three datasets, showing that all these classifiers outperform the original, more complex model (with CatBoost as the best-performing), and hence that the value of this prior approach likely lay mostly in its range of presented features. We then use feature rankings from Boruta-Shap to discover the most valuable of these 60 features for each of the three regions, and challenge our optimized models to predict earthquakes of larger magnitudes, demonstrating their resilience to imbalanced data. Notably, we also address the prevalent issue of inappropriate test data selection and data leakage in earthquake prediction studies, demonstrating our models can continue to deliver effective predictions when the possibility of data leakage is strictly controlled.
+SN  - 1573-0840
+UR  - https://doi.org/10.1007/s11069-023-06221-5
+DO  - 10.1007/s11069-023-06221-5
+ID  - Zhao2024
+ER  - 
+```
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
