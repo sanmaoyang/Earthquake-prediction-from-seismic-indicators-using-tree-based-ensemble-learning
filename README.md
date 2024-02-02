@@ -23,22 +23,22 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="image/logo.png" alt="Logo" width="600" height="300">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Earthquake prediction from seismic indicators using tree-based ensemble learning</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/sanmaoyang/Earthquake-prediction-from-seismic-indicators-using-tree-based-ensemble-learning/issues">Request Feature</a>
   </p>
 </div>
 
