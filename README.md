@@ -84,24 +84,19 @@ presented in:
 | Author| Yang Zhao & Denise Gorse |
 | Corresponding Author | Denise Gorse |
 | Link |https://link.springer.com/article/10.1007/s11069-023-06221-5|
-| Availability of code | https://figshare.com/articles/Earthquake Prediction using SVR and HNN/6406814.|
+| Availability of code | https://figshare.com/articles/Earthquake_Prediction_using_SVR_and_HNN/6406814.|
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-### Built With
+###  Development Environment
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+|  | Info |
+|-:|:-----|
+| Operating system | Ubuntu (WSL2) |
+| CPU| AMD R7-3700x 3.6GHz - 8 core |
+|  Programming Language | Python |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
