@@ -73,7 +73,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Repository 
 
-This paper has been published in Natural Hazards：
+This is the source code for the Natural Hazards paper：
 
 |  | Info |
 |-:|:-----|
