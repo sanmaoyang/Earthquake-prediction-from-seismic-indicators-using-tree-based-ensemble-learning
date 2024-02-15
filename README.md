@@ -154,7 +154,7 @@ model = XGBClassifier()
 # Create a model tuner
 tuner = ModelTuner(model, train_data, validation_data, test_data)
 # Define the fixed parameters
-fixed_params = {"n_estimators": 50,"verbosity":0}
+fixed_params = {"n_estimators": 50,"verbosity":0,"n_jobs":-1}
 # Define the model parameters you want to optimase
 param_grid = {"learning_rate": [0.1, 0.01, 0.001], "max_depth": [3, 5, 10]}
 # Tune the model
