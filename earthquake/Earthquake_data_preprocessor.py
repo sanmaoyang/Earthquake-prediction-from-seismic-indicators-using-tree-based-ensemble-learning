@@ -60,7 +60,7 @@ class EarthquakeDataPreprocessor:
     """
 
     train_data, test_data = train_test_split(self.data, test_size=self.test_size, shuffle=False)
-    return train_data[:-50], test_data
+    return train_data[:-self.n], test_data
 
   def _split_train_validation(self, train_data):
     """
@@ -68,7 +68,7 @@ class EarthquakeDataPreprocessor:
     """
 
     train_data, validation_data = train_test_split(train_data, test_size=self.validation_size,shuffle=False)
-    return train_data[:-50], validation_data
+    return train_data[:-self.n], validation_data
 
   def _normalize_data(self, train_data):
     """
