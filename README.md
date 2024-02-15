@@ -145,7 +145,7 @@ from xgboost import XGBClassifier
 data = pd.read_csv("SC.csv")
 
 # Create a preprocessor object
-preprocessor = EarthquakeDataPreprocessor(data)
+preprocessor = EarthquakeDataPreprocessor(data,remove_nan=False, remove_duplicates=False, binarize_magnitude=True, threshold=5, test_size=0.3, validation_size=0.3, n=50, normalize_data=False)
 
 # Get the training, validation, and testing sets
 train_data, validation_data, test_data = preprocessor.get_datasets()
