@@ -213,9 +213,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Yang Zhao  - yangzhao1215@gmail.com
-
 Denise Gorse - d.gorse@cs.ucl.ac.uk
+
+Yang Zhao  - yangzhao1215@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -224,16 +224,10 @@ Denise Gorse - d.gorse@cs.ucl.ac.uk
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+A list of resources that can be helpful:
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [A comparison of deep and shallow models for the detection of induced seismicity](https://onlinelibrary.wiley.com/doi/full/10.1111/1365-2478.13386)
+* [Seismic indicators based earthquake prediction system using support vector regressor and hybrid neural networks](https://figshare.com/articles/dataset/Earthquake_Prediction_using_SVR_and_HNN/6406814/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
