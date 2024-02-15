@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import PredefinedSplit, GridSearchCV, TimeSeriesSplit
+from sklearn.model_selection import PredefinedSplit, GridSearchCV,TimeSeriesSplit
 from sklearn.metrics import f1_score, roc_auc_score, matthews_corrcoef
 class ModelTuner:
 
-    def __init__(self, model, train_data, validation_data, test_data):
+    def __init__(self, model, train_data, validation_data, test_data ,scorefunction):
         self.model = model
         self.train_data = train_data
         self.validation_data = validation_data
@@ -13,7 +13,7 @@ class ModelTuner:
         self.mcc_index = 1
         self.y_pred = None
         self.y_pro = None
-
+        self.scorefunction = scorefunction
 
     def tune(self,fixed_params,param_grid):
         # Combine the train and validation data
@@ -26,7 +26,7 @@ class ModelTuner:
         self.model.set_params(**fixed_params)
 
         # Create a grid search CV object
-        clf = GridSearchCV(estimator=self.model, cv=pds, param_grid=param_grid)
+        clf = GridSearchCV(estimator=self.model, cv=pds, param_grid=param_grid,scoring=self.scorefunction)
 
         # Fit the model to the training data
         clf.fit(train.iloc[:,:-1], train.iloc[:,-1])
