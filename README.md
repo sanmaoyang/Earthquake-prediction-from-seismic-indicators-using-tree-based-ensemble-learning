@@ -150,15 +150,24 @@ preprocessor = EarthquakeDataPreprocessor(data,remove_nan=False, remove_duplicat
 # Get the training, validation, and testing sets
 train_data, validation_data, test_data = preprocessor.get_datasets()
 
+##define the scoring function
+score1 = make_scorer(roc_auc_score, needs_proba=True)
+
+##Define model
 model = XGBClassifier()
+
 # Create a model tuner
-tuner = ModelTuner(model, train_data, validation_data, test_data)
+tuner = ModelTuner(model, train_data, validation_data, test_data,scorefunction = score1)
+
 # Define the fixed parameters
-fixed_params = {"n_estimators": 50,"verbosity":0,"n_jobs":-1}
+fixed_params = {"verbosity":0,"n_jobs":-1}
+
 # Define the model parameters you want to optimase
-param_grid = {"learning_rate": [0.1, 0.01, 0.001], "max_depth": [3, 5, 10]}
+param_grid = {"learning_rate": [0.1, 0.01, 0.001], "max_depth": [3, 5, 10],"n_estimators":[50,55]}
+
 # Tune the model
 best_parameters , best_model = tuner.tune(fixed_params, param_grid)
+
 #Provide an evaluation of the best model’s performance on the test data.
 tuner.evaluate()
    ```
