@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import PredefinedSplit, GridSearchCV
+from sklearn.model_selection import PredefinedSplit, GridSearchCV, TimeSeriesSplit
 from sklearn.metrics import f1_score, roc_auc_score, matthews_corrcoef
 class ModelTuner:
 
@@ -20,8 +20,7 @@ class ModelTuner:
         train = pd.concat([self.train_data, self.validation_data])
 
         # Create a predefined split
-        split_index = [-1 if x in self.validation_data.index else 0 for x in self.train_data.index]
-        pds = PredefinedSplit(test_fold=split_index)
+        pds = TimeSeriesSplit(test_size=len(self.validation_data),n_splits=2)
 
         # Set the fixed parameters in the model
         self.model.set_params(**fixed_params)
