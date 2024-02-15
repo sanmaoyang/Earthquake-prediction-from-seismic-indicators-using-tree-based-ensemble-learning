@@ -15,7 +15,7 @@ class EarthquakeDataPreprocessor:
     threshold: The threshold for binarization.
     test_size: The size of the test set.
     validation_size: The size of the validation set.
-    n: The number of rows to remove between the training and testing sets.
+    n: The number of rows to remove between the training and testing/validation sets.
     normalize_data: Whether to normalize the data.
   """
 
