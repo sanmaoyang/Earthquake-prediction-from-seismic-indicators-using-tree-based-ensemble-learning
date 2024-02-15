@@ -126,10 +126,36 @@ This will create a virtual environment named ```myenv``` with Python 3.8.
 
 To install the required dependencies, activate the virtual environment and run the following command:
    ```sh
-   conda create -n myenv python=3.8
-   ```
 conda activate myenv
 pip install -r requirements.txt
+   ```
+### Example
+```Earthquake_data_preprocessor```  and ```Model_Tuner``` 
+   ```sh
+from Earthquake_data_preprocessor import EarthquakeDataPreprocessor
+from Model_Tuner import ModelTuner
+import pandas as pd 
+from xgboost import XGBClassifier
+# Load the data
+data = pd.read_csv("SC.csv")
+
+# Create a preprocessor object
+preprocessor = EarthquakeDataPreprocessor(data)
+
+# Get the training, validation, and testing sets
+train_data, validation_data, test_data = preprocessor.get_datasets()
+
+model = XGBClassifier()
+# Create a model tuner
+tuner = ModelTuner(model, train_data, validation_data, test_data)
+# Define the fixed parameters
+fixed_params = {"n_estimators": 50,"verbosity":0}
+# Define the model parameters
+param_grid = {"learning_rate": [0.1, 0.01, 0.001], "max_depth": [3, 5, 10]}
+# Tune the model
+mcc_value = tuner.tune(fixed_params, param_grid)
+tuner.evaluate()
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
