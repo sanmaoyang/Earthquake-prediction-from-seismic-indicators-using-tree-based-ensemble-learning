@@ -51,7 +51,7 @@ class ModelTuner:
         train = pd.concat([self.train_data, self.validation_data])
         self.model.fit(train.iloc[:,:-1], train.iloc[:,-1])
         self.y_pred = self.model.predict(self.test_data.iloc[:,:-1])
-        self.y_pro = self.model.predict_proba(self.test_data.iloc[:,:-1])[:,0]
+        self.y_pro = self.model.predict_proba(self.test_data.iloc[:,:-1])[:,1]
 
     def evaluate(self,mccmax = False):
         self.getpredict()
